@@ -166,15 +166,3 @@ system.max_flow()  # Calculate resource flow capacity
 system.search_location()  # Quick location lookup
 system.get_emergency_contacts()  # Retrieve emergency numbers
 ```
-
-## Technical Specifications
-
-- **Language**: Python 3.x
-- **Architecture**: Modular, Object-Oriented Design
-- **Memory Management**: Efficient data structure implementations
-- **Algorithms**: Industry-standard graph and tree algorithms
-- **Scalability**: Designed for large-scale disaster response networks
-
-This modular disaster response system combines theoretical computer science concepts with practical emergency management requirements, providing a robust and maintainable solution for disaster response operations.
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/92077432/b1828d89-4d66-45e8-8078-6b88594c880d/image.jpg?AWSAccessKeyId=ASIA2F3EMEYESIHLI45J&Signature=Cumglrm7U1HUfAYxNRtNByeaSA4%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEEQaCXVzLWVhc3QtMSJHMEUCIQC0di6ChnRPcuAzEiVeD9FdnDOrwaXShKQnBLjhYpClcgIgDDHDCzlXL7e6MqWV9wOyvlfYQecbeNB4C1aHv%2Fl7Zkkq%2BgQIvf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDOoMCgcIujcYyTxfCSrOBKifd3JP81AQvhbWBNQa2Nnk2Mpml8joLq%2FtNQ3iE56Ix2d7WzYc6t35JZL8iLBSWVvhngqNIhVOmVJkuR%2FUOikyTZStZ62ZSRJux86UHFCqwrL8jqR3v5sDVoPGX3a5dt98iKGoO%2Fw4%2B598xdZpA4oHogw0DbGQmZIe4TMQX%2FpuYFd2FS%2BpCZRKgEQXu3pjt4hc%2F8i%2FsngswGveFa1wPOXn6AXQdGD3J2uBcaCKfgnBuPfpg0qjH0V%2Fp02r9b0lDO33v6IqDQnSifg%2F5dsKEGWTtoBhbdHGvOQb1cHSiHwveZHe0zZZ7l3kC2BD4fI5AsG%2BVBfEE9Vh7gpwT5585FouxNld1gVuAWy2QDOmHG3nphOTDIcxw5DFtIubNcy3%2BO8dsxY9QukiDGhmvQOhiOoz0plDOtmQ%2F061zgblBq1T0SZcqE%2F02BSCiyOEXb7GqPpm9xxwRCW6MjvvBoxm8zOpoL7Vdk3GothUij%2B9c682bDkeO5x%2FV2ud7ip6cNaqb%2FJXwNzJyZT66n4FLWxTvwD5s%2FteZwsYaEn0%2FBLEHQ2ERmbjmSnxSsyHkIAQlswaM0I3RvjShcBHiiw2%2F8Ame%2BsHqWGH0lwWttMsB8Ytlr7n1HOcUZI4zCgX5WnJTH9N1WkKmjl33SQzT4NnT287rY6UWvnj4gAE9RsYMMZZTvO5KR8NNuXbyicMTay6f%2BFPXpRC02jAUnzvCx1%2B%2FaslhDXejvXg9gHfOneZTFhG26C9ea1eersgzRnV6eH4VZKec3ART28FFIjq3%2F7qHmSgMMLlr8YGOpoBJX574UGoQXLLveh6hTyuAOR2BBYvFpwcBwztZPbB%2FVg3MnXq%2FOmTzrfUnBYSvCgUFmuiq8URQ5XWUuysQGGjrJ0s4xqE4USROqdaPjASL%2FNq%2Fj5nCBHARBQbVqb4YPqFAOEnVg38YNM%2F2OEgAi8b4nyQN0OoL86kfwzBqQ2sCV5VMuaM34P1heGDbTrrUWAXh%2BndqN%2FvQiWPtg%3D%3D&Expires=1758199285)
