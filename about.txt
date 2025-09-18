@@ -1,0 +1,79 @@
+# HashMap Class Methods
+HashMap.__init__() # Initializes a new hash map with a fixed size and empty buckets
+HashMap._hash() # Generates a hash value for a given key using modulo operation
+HashMap.add() # Adds or updates a key-value pair in the hash map using chaining for collision resolution
+HashMap.get() # Retrieves the value associated with a given key from the hash map
+
+# Graph Class Methods
+Graph.__init__() # Creates a new empty graph using adjacency list representation
+Graph.add_city() # Adds a new city as a vertex to the graph if it doesn't exist
+Graph.remove_city() # Removes a city and all its associated routes from the graph
+Graph.add_route() # Creates a bidirectional route between two cities with a given distance
+Graph.remove_route() # Removes the bidirectional route between two specified cities
+Graph.dfs() # Performs depth-first search traversal starting from a given city
+Graph.shortest_path() # Finds the shortest path between two cities using Dijkstra's algorithm
+Graph.paths() # Recursively finds and prints all possible paths between two cities
+Graph.prim_mst() # Generates a minimum spanning tree using Prim's algorithm
+
+# AVL Tree Methods
+AVLNode.__init__() # Creates a new AVL tree node with a key, severity, and initial height
+AVLTree.get_height() # Returns the height of a given node in the AVL tree
+AVLTree.rotate_right() # Performs a right rotation to balance the AVL tree
+AVLTree.rotate_left() # Performs a left rotation to balance the AVL tree
+AVLTree.get_balance() # Calculates the balance factor of a node
+AVLTree.insert() # Inserts a new node while maintaining AVL tree balance
+AVLTree.inorder() # Performs an inorder traversal of the AVL tree
+
+# Trie Methods
+TrieNode.__init__() # Initializes a new trie node with empty children map
+Trie.__init__() # Creates a new trie with an empty root node
+Trie.insert() # Inserts a word into the trie
+Trie.search() # Searches for a complete word in the trie
+
+# Heap Methods
+MinHeap.__init__() # Creates a new empty min heap
+MinHeap.push() # Adds a new item to the min heap
+MinHeap.pop() # Removes and returns the smallest item from the heap
+MinHeap.top() # Displays the smallest item in the heap without removing it
+MinHeap.display() # Shows all items in the heap
+MaxHeap.__init__() # Creates a new empty max heap
+MaxHeap.push() # Adds a new item to the max heap
+MaxHeap.pop() # Removes and returns the largest item from the heap
+MaxHeap.top() # Displays the largest item in the heap without removing it
+MaxHeap.display() # Shows all items in the heap
+
+# BST Methods
+BSTNode.__init__() # Creates a new binary search tree node with key and data
+BST.__init__() # Initializes an empty binary search tree
+BST.insert() # Inserts a new node with key and data into the BST
+BST.search() # Searches for a node with a specific key in the BST
+
+# DisjointSet Methods
+DisjointSet.__init__() # Initializes a new disjoint set with empty parent and rank maps
+DisjointSet.find() # Finds the representative of a set using path compression
+DisjointSet.union() # Merges two sets using union by rank
+DisjointSet.add() # Adds a new item as a singleton set
+
+# MaxFlow Methods
+MaxFlow.bfs() # Performs breadth-first search to find augmenting paths
+MaxFlow.ford_fulkerson() # Implements Ford-Fulkerson algorithm for maximum flow
+
+# DisasterResponseSystem Methods
+DisasterResponseSystem.__init__() # Initializes all data structures for the disaster response system
+DisasterResponseSystem.add_city_and_route() # Adds a new city and route to the network
+DisasterResponseSystem.insert_disaster_type_with_severity() # Records a new disaster type with severity
+DisasterResponseSystem.all_emergencies() # Displays all recorded emergencies
+DisasterResponseSystem.search_location() # Searches for a location in the system
+DisasterResponseSystem.add_location() # Adds a new location to the system
+DisasterResponseSystem.add_emergency_with_urgency() # Records a new emergency with urgency level
+DisasterResponseSystem.insert_historical_response_data() # Stores historical response data
+DisasterResponseSystem.find_shortest_path_between_cities() # Finds optimal route between two cities
+DisasterResponseSystem.display_top_priority_emergency() # Shows the most urgent emergency
+DisasterResponseSystem.search_historical_response() # Retrieves historical response data
+DisasterResponseSystem.display_minimal_cost_travel() # Shows minimum spanning tree of the network
+DisasterResponseSystem.travel_cities() # Performs DFS traversal from a starting city
+DisasterResponseSystem.display_disasters() # Shows all disaster types in order
+DisasterResponseSystem.max_flow() # Calculates maximum flow between two cities
+DisasterResponseSystem.add_resource_route() # Adds a resource connection between cities
+DisasterResponseSystem.minimal_resources() # Finds minimum spanning tree for resource network
+DisasterResponseSystem.run() # Runs the main menu-driven interface

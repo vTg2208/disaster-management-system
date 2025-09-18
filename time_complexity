@@ -1,0 +1,166 @@
+
+
+HashMap Methods
+==============
+1.add()
+- Time Complexity: O(1) average, O(n) worst
+- Justification: In average case, hash function distributes elements evenly, leading to constant time insertion. Worst case occurs when all elements hash to same bucket, requiring traversal of entire chain.
+
+2. get()
+- Time Complexity: O(1) average, O(n) worst
+- Justification: Hash function directly computes bucket index in constant time. If collision chain is long (worst case), must traverse entire chain to find key.
+
+
+Graph Methods
+=============
+1. add_city()
+- Time Complexity: O(1)
+- Justification: Simply adds new vertex to adjacency list using list append operation. No traversal or searching required.
+
+2. add_route()
+- Time Complexity: O(1)
+- Justification: Adds edge to both cities' adjacency lists using constant time append operations. No reorganization needed.
+
+3. remove_city()
+-Time Complexity: O(V + E) where V is number of vertices and E is number of edges
+-Justification: Must remove all edges connected to the city (O(E)) and then remove the vertex itself from adjacency list (O(1)). In worst case, may need to examine all edges if the removed city was connected to all others.
+
+4. remove_route()
+-Time Complexity: O(E) where E is number of edges
+-Justification: Must traverse the adjacency lists of both cities to filter out the specified edge. In worst case, must examine all edges connected to both cities.
+
+5. shortest_path()
+- Time Complexity: O((V + E) log V)
+- Justification: Implements Dijkstra's algorithm using priority queue. For each vertex (V), performs heap operations (log V) and explores all edges (E).
+
+6. paths()
+- Time Complexity: O(V!)
+- Justification: Explores all possible paths using recursive backtracking. In worst case, must visit all permutations of vertices to find all paths.
+
+7. prim_mst()
+- Time Complexity: O((V + E) log V)
+- Justification: Uses min-heap to process vertices (log V) and explores all edges (E). Each vertex is processed once, leading to V heap operations.
+
+8. dfs()
+-Time Complexity: O(V + E) where V is number of vertices and E is number of edges
+-Justification: Classic depth-first search visits each vertex once and explores each edge once. Stack operations (through recursion) are constant time.
+
+AVL Tree Methods
+================
+1. insert()
+- Time Complexity: O(log n)
+- Justification: Traverses tree height for insertion position, then performs at most two rotations to maintain balance. Height is logarithmic due to balancing.
+
+2. rotate_left()/rotate_right()
+- Time Complexity: O(1)
+- Justification: Only requires updating pointers and heights for three nodes maximum. Number of operations independent of tree size.
+
+3. get_height()/get_balance()
+- Time Complexity: O(1)
+- Justification: Height information stored in nodes, accessed directly. Balance factor computed from stored heights without traversal.
+
+
+ Trie Methods
+ ============
+1. insert()
+- Time Complexity: O(m) where m is string length
+- Justification: Processes each character of input string exactly once. Creates new nodes or follows existing path, both constant time per character.
+
+2. search()
+- Time Complexity: O(m) where m is string length
+- Justification: Follows path in trie for each character in search string. Each character lookup in node's children map is constant time.
+
+ MinHeap/MaxHeap Methods
+ =======================
+1. push()
+- Time Complexity: O(log n)
+- Justification: Adds element to end of heap then bubbles up through height of tree. Height is logarithmic in number of elements.
+
+2. pop()
+- Time Complexity: O(log n)
+- Justification: Removes root, moves last element to root, then bubbles down through height of tree. Height is logarithmic in size.
+
+3. top()
+- Time Complexity: O(1)
+- Justification: Direct access to root element of heap. No traversal or comparison operations needed.
+
+4. display()
+- Time Complexity: O(n)
+- Justification: Must visit and print every element in heap exactly once. No way to display all elements in sub-linear time.
+
+ Binary Search Tree Methods
+ ============================
+1. insert()
+- Time Complexity: O(h) where h is height
+- Justification: Follows single path from root to insertion point. Path length equals tree height, which could be n in worst case (unbalanced).
+
+2. search()
+- Time Complexity: O(h) where h is height
+- Justification: Follows single path from root based on comparisons. Path length equals tree height, potentially n in unbalanced tree.
+
+ Disjoint Set Methods
+ ====================
+1. find()
+- Time Complexity: O(α(n)) ≈ O(1)
+- Justification: Path compression flattens tree during find operations. Inverse Ackermann function α(n) grows extremely slowly, effectively constant.
+
+2. union()
+- Time Complexity: O(α(n)) ≈ O(1)
+- Justification: Union by rank keeps trees shallow. Combined with path compression in find operations, achieves near-constant time.
+
+3. add()
+- Time Complexity: O(1)
+- Justification: Only creates new entry in parent and rank maps. No traversal or restructuring needed.
+
+ MaxFlow Methods
+ ================
+1. bfs()
+- Time Complexity: O(V + E)
+- Justification: Classic BFS visits each vertex once and explores each edge once. Queue operations are constant time.
+
+2. ford_fulkerson()
+- Time Complexity: O(fE) where f is max flow
+- Justification: Each augmenting path (found by BFS) increases flow by at least 1. Maximum number of paths is f, each requiring O(E) time to find.
+
+DisasterResponseSystem Methods
+==============================
+
+1. add_city_and_route()
+- Time Complexity: O(1)
+- Justification: Combines constant time graph operations (add_route) with constant time trie operation (add_location).
+
+2. insert_disaster_type_with_severity()
+- Time Complexity: O(log n)
+- Justification: Single AVL tree insertion operation. Tree balancing ensures logarithmic height.
+
+3. search_location()
+- Time Complexity: O(m) where m is location string length
+- Justification: Single trie search operation, traversing one path for input string length.
+
+4. add_emergency_with_urgency()
+- Time Complexity: O(log n)
+- Justification: Single heap insertion operation. Heap property maintenance requires logarithmic time.
+
+5. insert_historical_response_data()
+- Time Complexity: O(h) where h is BST height
+- Justification: Single BST insertion operation, following one path from root to insertion point.
+
+6. find_shortest_path_between_cities()
+- Time Complexity: O((V + E) log V)
+- Justification: Implements Dijkstra's algorithm for shortest path. Priority queue operations dominate complexity.
+
+7. display_top_priority_emergency()
+- Time Complexity: O(1)
+- Justification: Direct access to heap root element. No traversal or comparison operations needed.
+
+8. all_emergencies()
+- Time Complexity: O(n)
+- Justification: Must traverse and display all elements in emergency heap. Linear time required to show all emergencies.
+
+9. search_historical_response()
+- Time Complexity: O(h) where h is BST height
+- Justification: Single BST search operation, following one path from root based on comparisons.
+
+10. display_minimal_cost_travel()
+- Time Complexity: O((V + E) log V)
+- Justification: Implements Prim's algorithm for minimum spanning tree. Priority queue operations dominate complexity.
